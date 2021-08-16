@@ -1,0 +1,157 @@
+*{
+    padding: 5;
+    margin: auto;
+
+}
+
+body{
+    background-color: darkslategrey;
+    font-family: 'Roboto Slab';
+    background-image: url('2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+img{
+    border-radius: 50%;
+    height:30%;
+    width:40%;   
+    transition-property: height width;
+    transition-duration: 1s;
+}
+
+img:hover{
+    transform: scale(1.05);
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.description{
+    padding: 10px;
+}
+
+p.one{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.skills{
+    padding:10px;
+    font-size: 25px;
+}
+
+.header{
+    padding-top: 2%;
+    border-radius: 10px;
+}
+
+h2.s1{
+    background-color: rgba(180, 180, 180, 0.513);
+    border-radius: 10px;
+    font-size: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: lightgrey;
+    color: black;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.name{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 1rem;
+}
+.navbar-links{
+    height: 100%;
+}
+
+.navbar-links ul{
+    display: flex;
+}
+.navbar-links li{
+    list-style: none ;
+}
+.navbar-links li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1.2rem;
+    font-size: 25px;
+}
+.navbar-links li a:hover{
+    display: block;
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+.navbar-links li:hover{
+    background-color: rgba(77, 77, 77, 0.319);
+    border-radius: 6px;
+
+}
+
+.toggle-button{
+    position:absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    width: 30px;
+    height: 20px;
+    justify-content: space-between;
+    
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    margin: 0.5px;
+    background-color: black;
+    border-radius: 10px;
+ 
+}
+
+@media (max-width:400px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links ul li{
+        text-align: center;
+    }
+    .navbar-links ul li a{
+        padding: .5rem 1rem;   
+    }
+     .navbar-links.active{
+         display: flex;
+     }
+}
+
+.icons i{
+    padding: 10px;
+    color: rgb(208, 177, 248);
+    font-size: 40px;
+}
