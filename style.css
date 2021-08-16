@@ -150,6 +150,15 @@ h2.s1{
      }
 }
 
+
+.contact h2 {
+    background-color: rgba(180, 180, 180, 0.513);
+    border-radius: 10px;
+    font-size: 2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
 .icons i{
     padding: 10px;
     color: rgb(208, 177, 248);
